@@ -2,7 +2,25 @@ bash-project-initializer
 ========================
 
 A bash script that quickly creates a basic project structure and starter files based off on repositorys main language.
+
 * creates a new project directory
 * generates common folders and files
 * creates a starter README
 * basic .gitignore
+
+Usage
+-----
+
+    ./src/main.sh
+
+You will be prompted for:
+
+* Repository name (e.g. `port-repo`)
+* Location, the parent directory to create it in (e.g. `/home/foo/git/`)
+
+The script creates the directory and runs 'git init' on it.
+
+Requirements
+------------
+
+* yq to handle YAML configuration formats.
