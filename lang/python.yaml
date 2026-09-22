@@ -1,0 +1,18 @@
+dirs:
+  - src
+  - tests
+
+files:
+  src/main.py: |
+    def main():
+        print("Hello, world!")
+
+
+    if __name__ == "__main__":
+        main()
+  .gitignore: |
+    __pycache__/
+    *.pyc
+    .venv/
+  README.md: |
+    # Project

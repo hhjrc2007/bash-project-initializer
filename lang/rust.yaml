@@ -1,0 +1,17 @@
+dirs:
+  - src
+
+files:
+  src/main.rs: |
+    fn main() {
+        println!("Hello, world!");
+    }
+  Cargo.toml: |
+    [package]
+    name = "project"
+    version = "0.1.0"
+    edition = "2021"
+
+    [dependencies]
+  .gitignore: |
+    /target

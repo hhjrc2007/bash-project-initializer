@@ -1,0 +1,19 @@
+dirs:
+  - cmd
+
+files:
+  main.go: |
+    package main
+
+    import "fmt"
+
+    func main() {
+        fmt.Println("Hello, world!")
+    }
+  go.mod: |
+    module project
+
+    go 1.22
+  .gitignore: |
+    /bin/
+    *.exe
