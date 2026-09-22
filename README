@@ -1,0 +1,8 @@
+bash-project-initializer
+========================
+
+A bash script that quickly creates a basic project structure and starter files based off on repositorys main language.
+* creates a new project directory
+* generates common folders and files
+* creates a starter README
+* basic .gitignore
