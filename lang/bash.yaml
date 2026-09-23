@@ -1,0 +1,16 @@
+dirs:
+  - src
+
+files:
+  src/main.sh: |
+    #!/bin/bash
+
+    set -euo pipefail
+
+    main() {
+        echo "Hello, world!"
+    }
+
+    main "$@"
+  .gitignore: |
+    *.log

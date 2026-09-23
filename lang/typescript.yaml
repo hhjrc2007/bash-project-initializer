@@ -1,0 +1,36 @@
+dirs:
+  - src
+
+files:
+  src/index.ts: |
+    function main(): void {
+        console.log("Hello, world!");
+    }
+
+    main();
+  package.json: |
+    {
+      "name": "project",
+      "version": "1.0.0",
+      "main": "dist/index.js",
+      "scripts": {
+        "build": "tsc",
+        "start": "node dist/index.js"
+      },
+      "devDependencies": {
+        "typescript": "^5.4.0"
+      }
+    }
+  tsconfig.json: |
+    {
+      "compilerOptions": {
+        "target": "ES2020",
+        "module": "commonjs",
+        "outDir": "dist",
+        "strict": true
+      },
+      "include": ["src"]
+    }
+  .gitignore: |
+    node_modules/
+    dist/

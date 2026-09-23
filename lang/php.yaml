@@ -1,0 +1,19 @@
+dirs:
+  - src
+
+files:
+  src/index.php: |
+    <?php
+
+    function main(): void {
+        echo "Hello, world!\n";
+    }
+
+    main();
+  composer.json: |
+    {
+        "name": "project/project",
+        "require": {}
+    }
+  .gitignore: |
+    /vendor/

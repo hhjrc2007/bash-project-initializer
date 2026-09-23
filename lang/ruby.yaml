@@ -1,0 +1,15 @@
+dirs:
+  - lib
+
+files:
+  lib/main.rb: |
+    def main
+      puts "Hello, world!"
+    end
+
+    main
+  Gemfile: |
+    source "https://rubygems.org"
+  .gitignore: |
+    /.bundle/
+    *.gem

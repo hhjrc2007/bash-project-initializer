@@ -1,0 +1,23 @@
+dirs:
+  - src
+
+files:
+  src/main.cpp: |
+    #include <iostream>
+
+    int main() {
+        std::cout << "Hello, world!" << std::endl;
+        return 0;
+    }
+  Makefile: |
+    CXX = c++
+    CXXFLAGS = -Wall -Wextra -std=c++17
+
+    main: src/main.cpp
+    	$(CXX) $(CXXFLAGS) -o main src/main.cpp
+
+    clean:
+    	rm -f main
+  .gitignore: |
+    *.o
+    main
